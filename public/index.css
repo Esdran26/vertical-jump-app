@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #2C3E50;
+}
+
+h1 {font-size: 80px; font-weight: lighter; color: white;}
+
+h2 {font-size: 50px; font-weight: bold; color: #2D3436;}
+
+h3 a {
+    font-size: 40px; 
+    font-weight: normal; 
+    color: white; 
+    text-decoration: none;
+}
+
+h4 {font-size: 30px; font-weight: bold; color: #2D3436;}
+
