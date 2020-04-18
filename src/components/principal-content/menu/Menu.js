@@ -1,53 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Menu.css';
-import NavBarButton from './NavBarButton';
 
-
-const NavBarLink = (props) => {
-    return(
-        <div className="navbar-link">
-            <a href="#">{props.home}</a>
-            <a href="#">{props.question}</a>
-            <a href="#">{props.players}</a>
-        </div>
-    );
-}
-
-const NavBarOption = () => {
-    return(
-        <div className="navbar-option">
-            <NavBarLink 
-                home="Inicio"
-                question="Porque Salto Vertical?"
-                players="Jugadores Profesionales"     
-            />
-            <NavBarButton getStarted="Empezar" />
-        </div>
-    );
-}
-
-const NavBarLogo = (props) => {
-    return(
-        <div className="navbar-logo">
-            <h3>
-                <a href="#">{props.logo}</a>
-            </h3>
-        </div>
-    );
-}
-
-const NavBarVerticalJumpMenu = () => {
-    return(
-        <div className="navbar">
-            <NavBarLogo logo="VOLEIBOL" />
-            <NavBarOption />
-        </div>
-    );
-}
 
 const Menu = () => {
     return(
-        <NavBarVerticalJumpMenu />
+        <nav class="navbar">
+            <div className="navbar-logo">
+                <h3>
+                    <a href="#">VOLEIBOL</a>
+                </h3>
+            </div>
+
+            <input type="checkbox" id="nav_menu_checkbox" />
+            <label for="nav_menu_checkbox" class="nav_menu_icon">menu</label>
+
+            <div class="nav_menu_container">
+                <label for="nav_menu_checkbox" class="nav_menu_close">close</label>
+
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Porque Salto Vertical?</a></li>
+                    <li><a href="">Jugadores Profesionales</a></li>
+                    <li><a id="navbar-button" href="">Empezar</a></li>
+                </ul>
+            </div>
+
+        </nav>
     );
 }
 
