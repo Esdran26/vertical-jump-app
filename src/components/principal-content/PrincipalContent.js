@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/PrincipalContent.css';
-import Menu from '../menu/Menu';
-import PrincipalText from '../principal-text/PrincipalText';
+import Menu from './menu/Menu';
+import PrincipalText from './principal-text/PrincipalText';
 
 const PrincipalContent = () => {
     return(

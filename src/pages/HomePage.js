@@ -4,7 +4,7 @@ import PrincipalContent from '../components/principal-content/PrincipalContent';
 const HomePage = () => {
     return(
         <React.Fragment>
-            <PrincipalContent  />
+            <PrincipalContent />
         </React.Fragment>
     );
 }
