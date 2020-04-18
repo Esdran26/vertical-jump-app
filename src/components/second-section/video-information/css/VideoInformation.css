@@ -19,3 +19,7 @@
         top: 63%;
     }
 }
+
+@media (max-width: 1024px) {
+    .video-information {display: none;}
+}
