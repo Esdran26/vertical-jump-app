@@ -10,7 +10,7 @@
 .navbar-option {display: inline-flex;}
 
 .navbar-option a {
-    font-size: 20px; 
+    font-size: 1.2rem; 
     color: white; 
     text-decoration: none;
     margin: 0 0 0 50px;
@@ -31,4 +31,14 @@
     border: 3px solid #F9CA24;
     border-radius: 10px;
     padding: 12px 40px;
+}
+
+@media (max-width: 1440px) {
+    .navbar {height: 100px;}
+
+    h3 a {font-size: 2rem;}
+
+    .navbar-option a {font-size: 1rem;}
+
+    .navbar-button a {padding: 10px 35px;}
 }
