@@ -1,12 +1,13 @@
 import React from 'react';
-import './css/SecondSection.css'
+import './css/SecondSection.css';
+import SecondTitle from './second-title/SecondTitle';
 
 const SecondSection = () => {
     return(
         <React.Fragment>
-            <div className="test">
-                Hola
-            </div>
+            <SecondTitle 
+                title="Porqué Salto Vertical?"
+            />
         </React.Fragment>
     );
 }

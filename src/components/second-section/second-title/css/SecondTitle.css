@@ -1,0 +1,21 @@
+.second-title {
+    text-align: center;
+    margin: 10rem 0 2rem 0;
+}
+
+@media (max-width: 1360px) {
+    .second-title {margin-top: 15rem;}
+}
+
+@media (max-width: 1360px) and (max-height: 700px) {
+    .second-title {margin-top: 20rem;}
+}
+
+@media (max-width: 1024px) {
+    .second-title {margin-top: 2rem;}
+}
+
+@media (max-width: 520px) {
+    .second-title h2 {font-size: 2rem;}
+    .second-title {margin: 1rem 1rem;}
+}
