@@ -49,3 +49,19 @@ p {
         align-content: center;
     }
 }
+
+@media (max-width: 800px) {
+    .principal-text-description {margin: 0 7rem;}
+    .space-none {display: none;}
+}
+
+@media (max-width: 640px) {
+    .principal-text-description, .navbar {margin: 0 1.5rem;}
+}
+
+@media (max-width: 360px) {
+    .principal-text  h1 {font-size: 3.5rem;}
+    .principal-description-large p, .principal-description-short p {font-size: 1.1rem;}
+    .principal-buttons .navbar-button a {margin-right: 0.6rem;}
+    
+}

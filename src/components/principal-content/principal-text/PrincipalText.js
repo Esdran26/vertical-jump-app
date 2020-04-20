@@ -21,7 +21,7 @@ const PrincipalTitleDescription = (props) => {
                 <br/>
             </div>
             <div className="principal-description-large">
-                <p>Una de las cosas más importantes y necesarias que la gente no domina es su forma <br/>
+                <p>Una de las cosas más importantes y necesarias que la gente no domina es su forma <br className="space-none" />
                 y potencia de saltar.</p>
                 <br/>
             </div>
