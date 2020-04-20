@@ -6,7 +6,7 @@ import VideoInformation from '../second-section/video-information/VideoInformati
 
 const PrincipalContent = () => {
     return(
-        <div className="principal-content">
+        <div id="home" className="principal-content">
             <Menu />
             <PrincipalText />
             <VideoInformation

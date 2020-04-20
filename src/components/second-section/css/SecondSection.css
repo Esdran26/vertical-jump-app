@@ -1,0 +1,26 @@
+.second-section {
+    background-image: url('../../../img/bakcground-second-section.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+}
+
+.card-section-information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .second-section {background-position: initial;}
+}
+
+@media (max-width: 425px) {
+    .card-section-information {padding-top: 0;}
+}
+
+@media (max-width: 360px) {
+    .card-section-information {padding: 0 ;}
+}

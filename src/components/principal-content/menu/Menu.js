@@ -17,8 +17,8 @@ const NavBarMenuContainer = (props) => {
             <label for="nav_menu_checkbox" class="nav_menu_close">close</label>
 
             <ul>
-                <li><a href="">{props.home}</a></li>
-                <li><a href="">{props.question}</a></li>
+                <li><a href="#home">{props.home}</a></li>
+                <li><a href="#question">{props.question}</a></li>
                 <li><a href="">{props.player}</a></li>
                 <li><a id="navbar-button" href="">{props.getStarted}</a></li>
             </ul>
