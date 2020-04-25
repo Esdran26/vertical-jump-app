@@ -35,14 +35,14 @@ p {
         font-size: 1rem;
     }
 }
-@media (max-width: 1360px) and (max-height: 635px) {
-    .principal-text-description {margin-top: 0;}
+@media (max-width: 1360px) {
+    .principal-text-description {margin-top: 3rem;}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .principal-text-description {
         margin-top: 0;
-        height: 80vh;
+        min-height: 700px;
         display: grid;
         align-content: center;
     }

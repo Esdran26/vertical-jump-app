@@ -11,9 +11,9 @@ const SecondSection = () => {
     return(
         
         <div className="second-section">
-                <SecondTitle 
-                    title="Porqué Salto Vertical?"
-                />
+            <SecondTitle 
+                title="Porqué Salto Vertical?"
+            />
             
             <div className="card-section-information">
                 <CardInformation 

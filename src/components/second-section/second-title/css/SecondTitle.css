@@ -1,18 +1,6 @@
 .second-title {
     text-align: center;
-    padding: 10rem 0 2rem 0;
-}
-
-@media (max-width: 1360px) {
-    .second-title {padding-top: 15rem;}
-}
-
-@media (max-width: 1360px) and (max-height: 700px) {
-    .second-title {padding-top: 20rem;}
-}
-
-@media (max-width: 1024px) {
-    .second-title {padding-top: 2rem;}
+    padding: 3rem 0
 }
 
 @media (max-width: 520px) {

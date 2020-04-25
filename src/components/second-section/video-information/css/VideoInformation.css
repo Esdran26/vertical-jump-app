@@ -1,25 +1,15 @@
+.video-information {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
 .video-information iframe {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 63%;
-    left: 0;
-    right: 0;
+   
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@media (max-width: 1360px) {
-    .video-information iframe {
-        top: 70%;
-    }
-}
 
-@media (max-width: 1024px) {
-    .video-information iframe {
-        top: 63%;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .video-information {display: none;}
 }

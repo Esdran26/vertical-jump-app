@@ -1,5 +1,4 @@
 .principal-content {
-    height: 100vh;
     background-image:
         linear-gradient(rgba(44, 62, 80,0.85), rgba(44, 62, 80,0.85)), 
         url('../../../img/background.jpg');
