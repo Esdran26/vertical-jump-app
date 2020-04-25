@@ -19,7 +19,7 @@ const Menu = () => {
                 <a id="home" href="#">Incio</a>
                 <a id="content" href="#question">Porqué Salto Vertical?</a>
                 <a href="#">Jugadores Profesionales</a>
-                <a href="#">Empezar</a>
+                <a target="_blank" href="https://github.com/Esdran26/vertical-jump-app">Ver Repositorio</a>
                 <label for="chk" class="hide-menu-btn">
                     <i class="fas fa-times"></i>
                 </label>

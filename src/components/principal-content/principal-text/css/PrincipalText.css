@@ -5,7 +5,7 @@
     text-align: center;
 }
 p {
-    font-size: 1.5rem; 
+    font-size: 1.2rem; 
     color: white; 
     font-weight: 500;
 }
@@ -28,8 +28,6 @@ p {
 
 @media (max-width: 1440px) {
     .principal-text-description {margin-top: 5rem;}
-    
-    h1 {font-size: 4rem;}
 
     p {font-size: 1.2rem;}
 
@@ -57,10 +55,11 @@ p {
 
 @media (max-width: 640px) {
     .principal-text-description, .navbar {margin: 0 1.5rem;}
+    .principal-text  h1 {font-size: 3rem;}
 }
 
 @media (max-width: 360px) {
-    .principal-text  h1 {font-size: 3.5rem;}
+    
     .principal-description-large p, .principal-description-short p {font-size: 1.1rem;}
     .principal-buttons .navbar-button a {margin-right: 0.6rem;}
     

@@ -9,13 +9,13 @@ html {
 }
 
 h1 {
-    font-size: 5rem; 
+    font-size: 4rem; 
     font-weight: lighter; 
     color: white;
 }
 
 h2 {
-    font-size: 3.125rem; 
+    font-size: 2.5rem; 
     font-weight: bold; 
     color: #2D3436;
 }
@@ -28,8 +28,9 @@ h3 a {
 }
 
 h4 {
-    font-size: 30px; 
+    font-size: 1.5rem; 
     font-weight: bold; 
     color: #2D3436;
 }
 
+p {font-size: 1rem;}
