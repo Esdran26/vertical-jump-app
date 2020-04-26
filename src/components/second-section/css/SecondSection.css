@@ -18,7 +18,10 @@
 }
 
 @media (max-width: 425px) {
-    .card-section-information {padding-top: 0;}
+    .card-section-information {
+        padding-top: 0;
+        padding: 0 1rem 3rem 1rem;
+    }
 }
 
 @media (max-width: 360px) {
