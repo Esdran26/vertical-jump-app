@@ -1,20 +1,17 @@
 import React from 'react';
 import './css/SecondSection.css';
-import SecondTitle from './second-title/SecondTitle';
+import TitleSection from './second-title/TitleSection';
 import CardInformation from './card-information/CardInformation';
 import ImageFitnessStats from '../../img/undraw_fitness_stats_sht6.svg';
 import ImageWorkingOut from '../../img/working-out.svg';
 import ImagePersonalTrainer from '../../img/personal-trainer.svg';
 
 const SecondSection = () => {
-
     return(
-        
         <div className="second-section">
-            <SecondTitle 
+            <TitleSection 
                 title="Porqué Salto Vertical?"
-            />
-            
+            /> 
             <div className="card-section-information">
                 <CardInformation 
                     srcImage={ImageFitnessStats}

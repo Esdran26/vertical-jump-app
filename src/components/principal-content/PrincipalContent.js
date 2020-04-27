@@ -4,7 +4,7 @@ import Menu from './menu/Menu';
 import PrincipalText from './principal-text/PrincipalText';
 import VideoInformation from '../second-section/video-information/VideoInformation';
 
-const PrincipalContent = () => {
+const PrincipalContent = (props) => {
     return(
         <div className="principal-content">
             <Menu />

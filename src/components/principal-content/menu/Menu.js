@@ -1,6 +1,36 @@
 import React, { useState } from 'react';
 import './css/Menu.css';
 
+const menuData = [
+    {
+        name: 'Inicio',
+        href: '/',
+    },
+    {
+        name: 'Porqué Salto Vertical?',
+        href: '#question'
+    },
+    {
+        name: 'Jugadores Profesionales',
+        href: '#'
+    },
+    {
+        name: 'Ver Repositorio',
+        href: 'https://github.com/Esdran26/vertical-jump-app',
+        target: '_blank'
+    }
+]
+
+const MenuList = (props) => {
+    const menuList = props.menuData.map((menu) =>
+        <a target={menu.target} href={menu.href} key={menu.toString()}>
+            {menu.name}
+        </a>
+    );
+
+    return menuList;
+}
+
 const Menu = () => {
     return(
         
@@ -16,10 +46,7 @@ const Menu = () => {
             </label>
 
             <ul class="menu navbar-option">
-                <a id="home" href="#">Incio</a>
-                <a id="content" href="#question">Porqué Salto Vertical?</a>
-                <a href="#">Jugadores Profesionales</a>
-                <a target="_blank" href="https://github.com/Esdran26/vertical-jump-app">Ver Repositorio</a>
+                <MenuList menuData={menuData} />
                 <label for="chk" class="hide-menu-btn">
                     <i class="fas fa-times"></i>
                 </label>
