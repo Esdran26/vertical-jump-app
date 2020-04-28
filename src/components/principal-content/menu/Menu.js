@@ -12,7 +12,7 @@ const menuData = [
     },
     {
         name: 'Jugadores Profesionales',
-        href: '#'
+        href: '#players'
     },
     {
         name: 'Ver Repositorio',
@@ -37,7 +37,7 @@ const Menu = () => {
         <div className="header navbar">
             <div className="navbar-logo">
                 <h3>
-                    <a href="#">VOLEIBOL</a>
+                    <a href="/">VOLEIBOL</a>
                 </h3>
             </div>
             <input type="checkbox" id="chk" />

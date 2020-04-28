@@ -6,7 +6,7 @@ import PlayerInformation from './player-information/PlayerInformation';
 const ThirdSection = () => {
 
     return(
-        <div className="third-section">
+        <div id="players" className="third-section">
             <TitleSection 
                 title="Jugadores Profesionales"
             />
