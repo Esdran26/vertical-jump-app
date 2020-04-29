@@ -5,10 +5,15 @@ import CardInformation from './card-information/CardInformation';
 import ImageFitnessStats from '../../img/undraw_fitness_stats_sht6.svg';
 import ImageWorkingOut from '../../img/working-out.svg';
 import ImagePersonalTrainer from '../../img/personal-trainer.svg';
+import VideoInformation from './video-information/VideoInformation';
 
 const SecondSection = () => {
     return(
         <div className="second-section">
+            <VideoInformation
+                width="840"
+                height="472"
+            />
             <TitleSection 
                 title="Porqué Salto Vertical?"
             /> 

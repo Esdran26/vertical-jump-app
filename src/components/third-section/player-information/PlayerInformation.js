@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './css/PlayerInformation.css';
+import Kurek from '../../../img/Kurek.jpg';
+import Shafik from '../../../img/Shafik.jpg';
 
 const PlayerInformation = () => {
     
@@ -22,7 +24,7 @@ const PlayerInformation = () => {
             heightBlock: "326 cm",
             position: "Opuesto",
             teamNational: "Polonia",
-            srcImage: "https://www.fivb.org/Vis2009/Images/GetImage.asmx?No=74182&type=Press&width=300&height=450&stretch=uniformtofill"
+            srcImage: Kurek
         },
         {
             name: "Yūki Ishikawa",
@@ -35,14 +37,14 @@ const PlayerInformation = () => {
             srcImage: "https://www.fivb.org/Vis2009/Images/GetImage.asmx?No=74473&type=Press&width=300&height=450&stretch=uniformtofill"
         },
         {
-            name: "Lincoln Williams",
-            height: "200 cm",
-            weight: "104 kg",
-            heightSpike: "353 cm",
-            heightBlock: "330 cm",
-            position: "Opuesto",
-            teamNational: "Australia",
-            srcImage: "https://www.fivb.org/Vis2009/Images/GetImage.asmx?No=74241&type=Press&width=300&height=450&stretch=uniformtofill"
+            name: "Lincoln Shafik",
+            height: "190 cm",
+            weight: "97 kg",
+            heightSpike: "349 cm",
+            heightBlock: "323 cm",
+            position: "Rematador Externo",
+            teamNational: "Egipto",
+            srcImage: Shafik
         } 
     ];
 
