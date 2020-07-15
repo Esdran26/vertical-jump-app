@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import NavBarButton from '../menu/NavBarButton';
 import './css/PrincipalText.css';
 
@@ -7,7 +8,7 @@ const PrincipalButtons = (props) => {
         <div className="principal-buttons">
             <NavBarButton getStarted="Empezar" />
             <div className="secondary-button">
-                <a href="#">{props.secondaryButton}</a>
+                <Link to="/exercises">{props.secondaryButton}</Link>
             </div>
         </div>
     );
