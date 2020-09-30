@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const NavBarButton = (props) => {
+const NavBarButton = props => {
     return(
         <div className="navbar-button">
-            <a href="#">{props.getStarted}</a>
+            <Link to="/login">{props.getStarted}</Link>
         </div>
     );
 }

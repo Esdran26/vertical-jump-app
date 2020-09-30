@@ -4,7 +4,7 @@ import NavBarButton from '../menu/NavBarButton';
 import './css/PrincipalText.css';
 
 const PrincipalButtons = (props) => {
-    return(
+    return (
         <div className="principal-buttons">
             <NavBarButton getStarted="Empezar" />
             <div className="secondary-button">
@@ -15,22 +15,22 @@ const PrincipalButtons = (props) => {
 }
 
 const PrincipalTitleDescription = (props) => {
-    return(
+    return (
         <div className="principal-text-description">
             <div className="principal-text">
                 <h1>{props.title}</h1>
-                <br/>
+                <br />
             </div>
             <div className="principal-description-large">
                 <p>Una de las cosas más importantes y necesarias que la gente no domina es su forma <br className="space-none" />
                 y potencia de saltar.</p>
-                <br/>
+                <br />
             </div>
             <div className="principal-description-short">
                 <p>{props.descriptionShort}</p>
-                <br/><br/>
+                <br /><br />
             </div>
-            <PrincipalButtons 
+            <PrincipalButtons
                 secondaryButton="Lista de ejercicios"
             />
         </div>
@@ -38,7 +38,7 @@ const PrincipalTitleDescription = (props) => {
 }
 
 const PrincipalText = () => {
-    return(
+    return (
         <React.Fragment>
             <PrincipalTitleDescription
                 title="Incrementa tu salto vertical"
