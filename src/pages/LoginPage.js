@@ -1,20 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 
 import BackgroundBlur from '../img/background-blur.jpg';
+import Background from '../img/background.jpg';
 
 const Small = styled.small`
     color: red;
-`;
-const Container = styled.div`
-    background-image: url(${BackgroundBlur});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
 `;
 const H1 = styled.h1`
     font-size: 25px;
@@ -58,20 +50,47 @@ const ButtonSubmit = styled.button`
     }
 `;
 
+
 const LoginPage = () => {
+    const [isBlur, setIsBlur] = useState(false);
     const {register, handleSubmit, errors} = useForm(),
           onSubmit = data => console.log(data);
 
+    const backgroundFinish = isBlur ? BackgroundBlur : Background;
+
+    const styleContainer = {
+        backgroundImage: `url(${backgroundFinish})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+        display: 'grid',
+        placeItems: 'center',
+        transition: 'all .3s ease-in-out'
+    }
+
+    const handleFocus = () => {
+        setIsBlur(true);
+        console.log('El fondo es borroso');
+    }
+
+    const handleBlur = () => {
+        setIsBlur(false);
+        console.log('El fondo no es borroso');
+    }
+
     return(
-        <Container>
+        <div style={styleContainer}>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <H1>INICIA SESIÓN</H1><br/>
                 <label htmlFor="userName">Nombre de usuario: </label><br/>
                 <InputField 
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     id="userName"
                     name="userName" 
                     autoFocus="true"
-                    type="text" 
+                    type="text"
                     ref={register({required: true, minLength: 4, maxLength: 15})}
                 />
                 <br/>
@@ -80,6 +99,8 @@ const LoginPage = () => {
 
                 <label htmlFor="password">Contraseña: </label><br/>
                 <InputField 
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     id="password"
                     name="password"
                     type="password"
@@ -99,7 +120,7 @@ const LoginPage = () => {
 
                 <ButtonSubmit type="submit">Iniciar Sesión</ButtonSubmit>
             </Form>
-        </Container>
+        </div>
     );
 }
 

@@ -119,7 +119,6 @@ const ExercisesList = (props) => {
 }
 
 const ExercisesPage = () => {
-
     const menuExercisesStyle = {
         backgroundColor: '#1e3799'
     }
