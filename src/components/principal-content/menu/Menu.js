@@ -33,7 +33,6 @@ const MenuList = (props) => {
 
 const Menu = () => {
     return(
-        
         <div className="header navbar">
             <div className="navbar-logo">
                 <h3>
@@ -41,14 +40,14 @@ const Menu = () => {
                 </h3>
             </div>
             <input type="checkbox" id="chk" />
-            <label for="chk" class="show-menu-btn">
-                <i class="fas fa-bars"></i>
+            <label htmlFor="chk" className="show-menu-btn">
+                <i className="fas fa-bars"></i>
             </label>
 
-            <ul class="menu navbar-option">
+            <ul className="menu navbar-option">
                 <MenuList menuData={menuData} />
-                <label for="chk" class="hide-menu-btn">
-                    <i class="fas fa-times"></i>
+                <label htmlFor="chk" className="hide-menu-btn">
+                    <i className="fas fa-times"></i>
                 </label>
             </ul>
         </div>

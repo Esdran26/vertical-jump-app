@@ -27,6 +27,11 @@ const Form = styled.form`
     padding: 2rem;
     min-width: 320px;
     width: 400px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: translateY(-10px);
+    }
 `;
 const InputField = styled.input`
     font-size: .9rem;
