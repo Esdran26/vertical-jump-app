@@ -41,3 +41,18 @@ p, li {
 @media (max-width: 900px) {
     h1 {font-size: 3rem;}
 }
+
+input[type="text"], input[type="password"], input[type="search"] {
+    font-size: .9rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: all .5s ease-in-out;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="search"]:focus {    
+    border: 3px solid #555;
+} 

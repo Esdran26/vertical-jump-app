@@ -2,58 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 
 import Menu from '../components/principal-content/menu/Menu';
+import exercicesObject from '../data/exerciseObject';
 
-const exercicesObject = [
-    {
-        title: 'Marcha en el lugar',
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/02/march-in-place-exercise-illustration.gif',
-        primaryMuscles: 'Caderas y muslos',
-        secondaryMuscles: 'Piernas, brazos, corazón y glúteos'
-    },
-    {
-        title: 'Saltos de tijera',
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2014/10/jumping-jacks-exercise-illustration.gif',
-        primaryMuscles: 'Glúteos, cuádriceps y cadera',
-        secondaryMuscles: 'Piernas, abdominales y espalda',
-    },
-    {
-        title: 'Saltos de tobillo',
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/02/ankle-hops-exercise-illustration.gif',
-        primaryMuscles: 'Pantorrillas',
-        secondaryMuscles: 'Piernas y caderas',
-    },
-    {
-        title: 'Estocada lateral alternante',
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/02/alternating-side-lunge-exercise-illustration.gif',
-        primaryMuscles: 'Glúteos, cuádriceps, isquiotibiales y muslos internos',
-        secondaryMuscles: 'Corazón, pantorrillas y muslos externos'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2014/10/squat-exercise-illustration.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2016/09/front-and-back-lunges-exercise-illustration-spotebi.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/08/jump-squat-exercise-illustration.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/02/squat-side-kick-exercise-illustration.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2016/08/forward-jump-shuffle-back-exercise-illustration-spotebi.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2017/06/double-pulse-squat-jump-exercise-illustration-spotebi.gif'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/05/wall-sit-exercise-illustration.jpg'
-    },
-    {
-        link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/03/butterfly-stretch-exercise-illustration.jpg'
-    }
-];
-
+//Styled Components
 const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -92,8 +43,32 @@ const TextContainer = styled.div`
         margin: 2rem;
     }
 `;
+const SearchContainer = styled.div`
+    display: grid;
+    justify-content: center;
+    margin: 3rem 0;
+`;
 
-const ExercisesList = (props) => {
+const SearchExercise = props => {
+    const { title, placeholder, icon, name } = props;
+    
+    return(
+        <SearchContainer>
+            <h2>{title}</h2>
+
+            <input 
+                placeholder={placeholder}
+                type="search" 
+                name={name} 
+                id={name}
+            />
+
+            <i className={icon}></i>
+        </SearchContainer>
+    );
+}
+
+const ExercisesList = props => {
     const exercisesList = props.exercisesData.map(exercise => 
         <Container className="exercise-container" key={exercise.toString()}>
             <ImageContainer className="exercise-image">
@@ -128,6 +103,16 @@ const ExercisesPage = () => {
             <div style={menuExercisesStyle}>
                 <Menu />
             </div>
+
+            <div style={{textAlign: 'center'}}>
+                <SearchExercise
+                    title="Busca tu ejercicio"
+                    placeholder="Buscar..."
+                    icon="fas fa-2x  fa-search"
+                    name="searchExercise"
+                />
+            </div>
+
             <ExercisesList exercisesData={exercicesObject} />
         </React.Fragment>
     );

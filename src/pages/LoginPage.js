@@ -25,17 +25,6 @@ const Form = styled.form`
         transform: translateY(-10px);
     }
 `;
-const InputField = styled.input`
-    font-size: .9rem;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    transition: all .5s ease-in-out;
-    outline: none;
-    &:focus {border: 3px solid #555;}
-`;
 const ButtonSubmit = styled.button`
     width: 100%;
     padding: 12px 20px;
@@ -49,7 +38,6 @@ const ButtonSubmit = styled.button`
         color: white;
     }
 `;
-
 
 const LoginPage = () => {
     const [isBlur, setIsBlur] = useState(false);
@@ -84,7 +72,7 @@ const LoginPage = () => {
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <H1>INICIA SESIÓN</H1><br/>
                 <label htmlFor="userName">Nombre de usuario: </label><br/>
-                <InputField 
+                <input 
                     onFocus={handleFocus}
                     onBlur={handleBlur}
                     id="userName"
@@ -98,7 +86,7 @@ const LoginPage = () => {
                 <br/><br/>
 
                 <label htmlFor="password">Contraseña: </label><br/>
-                <InputField 
+                <input 
                     onFocus={handleFocus}
                     onBlur={handleBlur}
                     id="password"
