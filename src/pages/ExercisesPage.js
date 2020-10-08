@@ -48,6 +48,12 @@ const SearchContainer = styled.div`
     justify-content: center;
     margin: 3rem 0;
 `;
+const Icon = styled.i`
+    color: #777777;
+    position: absolute;
+    bottom: 25px;
+    right: 24px;
+`;
 
 const SearchExercise = props => {
     const { title, placeholder, icon, name } = props;
@@ -56,14 +62,20 @@ const SearchExercise = props => {
         <SearchContainer>
             <h2>{title}</h2>
 
-            <input 
-                placeholder={placeholder}
-                type="search" 
-                name={name} 
-                id={name}
-            />
+            <div 
+                style={{position: 'relative'}} 
+                className="input-search"
+            >
+                <input 
+                    placeholder={placeholder}
+                    type="text" 
+                    name={name} 
+                    id={name}
+                    maxLength="27"
+                />
 
-            <i className={icon}></i>
+                <Icon className={icon}></Icon>
+            </div>
         </SearchContainer>
     );
 }
@@ -108,7 +120,7 @@ const ExercisesPage = () => {
                 <SearchExercise
                     title="Busca tu ejercicio"
                     placeholder="Buscar..."
-                    icon="fas fa-2x  fa-search"
+                    icon="fas fa-1x  fa-search"
                     name="searchExercise"
                 />
             </div>
