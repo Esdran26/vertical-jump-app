@@ -58,6 +58,21 @@ const Icon = styled.i`
 const SearchExercise = props => {
     const { title, placeholder, icon, name } = props;
     
+    const handleChange = e => {
+        let searchValue = e.target.value;
+        searchValue.toLowerCase();
+        console.log(props.exercisesData);
+
+        props.exercisesData.map(exercise =>  {
+            if(exercise.title.indexOf(searchValue) === 0) {
+                console.log("Entra al nuevo arreglo");
+            }
+            else {
+                console.log("No entra al nuevo arreglo");
+            }
+        });
+    }
+
     return(
         <SearchContainer>
             <h2>{title}</h2>
@@ -67,6 +82,7 @@ const SearchExercise = props => {
                 className="input-search"
             >
                 <input 
+                    onChange={handleChange}
                     placeholder={placeholder}
                     type="text" 
                     name={name} 
@@ -82,7 +98,10 @@ const SearchExercise = props => {
 
 const ExercisesList = props => {
     const exercisesList = props.exercisesData.map(exercise => 
-        <Container className="exercise-container" key={exercise.toString()}>
+        <Container 
+            className="exercise-container" 
+            key={exercise.toString()}
+        >
             <ImageContainer className="exercise-image">
                 <Image 
                     src={exercise.link} 
@@ -118,9 +137,10 @@ const ExercisesPage = () => {
 
             <div style={{textAlign: 'center'}}>
                 <SearchExercise
+                    exercisesData={exercicesObject}
                     title="Busca tu ejercicio"
                     placeholder="Buscar..."
-                    icon="fas fa-1x  fa-search"
+                    icon="fas fa-1x fa-search"
                     name="searchExercise"
                 />
             </div>

@@ -24,27 +24,35 @@ const exercicesObject = [
         secondaryMuscles: 'Corazón, pantorrillas y muslos externos'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2014/10/squat-exercise-illustration.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2016/09/front-and-back-lunges-exercise-illustration-spotebi.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/08/jump-squat-exercise-illustration.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/02/squat-side-kick-exercise-illustration.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2016/08/forward-jump-shuffle-back-exercise-illustration-spotebi.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2017/06/double-pulse-squat-jump-exercise-illustration-spotebi.gif'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/05/wall-sit-exercise-illustration.jpg'
     },
     {
+        title: 'Estocada lateral alternante',
         link: 'https://www.cdn.spotebi.com/wp-content/uploads/2015/03/butterfly-stretch-exercise-illustration.jpg'
     }
 ];
